@@ -1,9 +1,13 @@
+// npm imports
 import Image from 'next/image';
+
+// local imports
 import { UpdateInvoice, DeleteInvoice } from '@/app/ui/invoices/buttons';
 import InvoiceStatus from '@/app/ui/invoices/status';
 import { formatDateToLocal, formatCurrency } from '@/app/lib/utils';
 import { fetchFilteredInvoices } from '@/app/lib/data';
 
+// invoices table
 export default async function InvoicesTable({
   query,
   currentPage,

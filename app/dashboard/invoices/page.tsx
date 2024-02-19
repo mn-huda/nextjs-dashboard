@@ -1,4 +1,5 @@
 // npm imports
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 
 // local imports
@@ -9,6 +10,11 @@ import Table from '@/app/ui/invoices/table';
 import Pagination from '@/app/ui/invoices/pagination';
 import Search from '@/app/ui/search';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
+
+// metadata
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 // invoices page
 export default async function Page({

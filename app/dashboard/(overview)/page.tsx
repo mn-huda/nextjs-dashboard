@@ -1,4 +1,5 @@
 // npm imports
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 
 // local imports
@@ -11,6 +12,11 @@ import {
   LatestInvoicesSkeleton,
   RevenueChartSkeleton,
 } from '@/app/ui/skeletons';
+
+// metadata
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 // dashboard page
 export default async function Page() {
